@@ -1,16 +1,11 @@
 package net.lmagikk.heartofthecraft.item;
 
 import net.lmagikk.heartofthecraft.HeartOfTheCraft;
-import net.minecraft.ChatFormatting;
-import net.minecraft.network.chat.Component;
+import net.lmagikk.heartofthecraft.item.complex.FlightCharm;
 import net.minecraft.world.item.*;
-import net.minecraft.world.level.Level;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
-import org.jetbrains.annotations.Nullable;
-
-import java.util.List;
 
 public class ModItems {
     public static final DeferredRegister.Items ITEMS = DeferredRegister.createItems(HeartOfTheCraft.MODID);
@@ -102,7 +97,9 @@ public class ModItems {
                 }
             });
 
-    //flight charm
+
+    public static final DeferredItem<Item> FLIGHT_CHARM = ITEMS.register("flight_charm",
+            () -> new FlightCharm(new Item.Properties()));
 
     //Blocks
 

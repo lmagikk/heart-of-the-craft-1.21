@@ -18,40 +18,50 @@ public class ModBlocks {
 
     public static final DeferredBlock<Block> OVUM_ORE = registerBlock("ovum_ore",
             () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(3f, -1f)
                     .requiresCorrectToolForDrops()
                     .lightLevel(state -> 5)));
 
     public static final DeferredBlock<Block> NETHUM_ORE = registerBlock("nethum_ore",
             () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(5f, -1f)
                     .requiresCorrectToolForDrops()
                     .lightLevel(state -> 5)));
     public static final DeferredBlock<Block> OCCUM_ORE = registerBlock("occum_ore",
             () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(4f, -1f)
                     .requiresCorrectToolForDrops()
                     .lightLevel(state -> 5)));
     public static final DeferredBlock<Block> ENNUM_ORE = registerBlock("ennum_ore",
             () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(7f, -1f)
                     .requiresCorrectToolForDrops()
                     .lightLevel(state -> 5)));
     public static final DeferredBlock<Block> WARRUM_ORE = registerBlock("warrum_ore",
             () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(6f, -1f)
                     .requiresCorrectToolForDrops()
                     .lightLevel(state -> 5)));
 
     public static final DeferredBlock<Block> WARRUM_BLOCK = registerBlock("warrum_block",
             () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(6f, -1f)
                     .requiresCorrectToolForDrops()));
     public static final DeferredBlock<Block> NETHUM_BLOCK = registerBlock("nethum_block",
             () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(5f, -1f)
                     .requiresCorrectToolForDrops()));
     public static final DeferredBlock<Block> ENNUM_BLOCK = registerBlock("ennum_block",
             () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(7f, -1f)
                     .requiresCorrectToolForDrops()));
     public static final DeferredBlock<Block> OCCUM_BLOCK = registerBlock("occum_block",
             () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(4f, -1f)
                     .requiresCorrectToolForDrops()));
     public static final DeferredBlock<Block> OVUM_BLOCK = registerBlock("ovum_block",
             () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(3f, -1f)
                     .requiresCorrectToolForDrops()));
     public static final DeferredBlock<Block> CRAFFUM_ALLOY_BLOCK = registerBlock("craffum_alloy_block",
             () -> new Block(BlockBehaviour.Properties.of()
