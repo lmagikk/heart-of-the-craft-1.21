@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:blasting",
+  "cookingtime": 100,
+  "experience": 1,
+  "ingredient": {
+    "item": "heartofthecraft:ovum_ore"
+  },
+  "result": {
+    "count": 1,
+    "id": "heartofthecraft:ovum_ingot"
+  }
+}

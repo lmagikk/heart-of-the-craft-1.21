@@ -1,0 +1,12 @@
+{
+  "type": "heartofthecraft:ore_generating",
+  "ingredients": [
+    {
+      "item": "heartofthecraft:heart_of_the_wither"
+    }
+  ],
+  "output": {
+    "count": 1,
+    "id": "heartofthecraft:nethum_ore"
+  }
+}

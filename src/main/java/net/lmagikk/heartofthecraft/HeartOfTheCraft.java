@@ -1,5 +1,8 @@
 package net.lmagikk.heartofthecraft;
 
+import net.lmagikk.heartofthecraft.block.ModBlocks;
+import net.lmagikk.heartofthecraft.item.ModCreativeTab;
+import net.lmagikk.heartofthecraft.item.ModItems;
 import org.slf4j.Logger;
 
 import com.mojang.logging.LogUtils;
@@ -48,6 +51,12 @@ public class HeartOfTheCraft
 
         NeoForge.EVENT_BUS.register(this);
 
+
+        ModCreativeTab.register(modEventBus);
+        ModItems.register(modEventBus);
+        ModBlocks.register(modEventBus);
+
+
         modEventBus.addListener(this::addCreative);
 
         modContainer.registerConfig(ModConfig.Type.COMMON, Config.SPEC);
@@ -61,7 +70,13 @@ public class HeartOfTheCraft
 
     private void addCreative(BuildCreativeModeTabContentsEvent event)
     {
+        if(event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
+            event.accept(ModItems.HEART_OF_THE_WARDEN);
+        }
 
+        if(event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS) {
+            event.accept(ModBlocks.OVUM_ORE);
+        }
     }
 
     // You can use SubscribeEvent and let the Event Bus discover methods to call

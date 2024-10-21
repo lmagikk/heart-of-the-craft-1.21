@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " X ",
+    " X ",
+    " S "
+  ],
+  "key": {
+    "X": {
+      "item": "heartofthecraft:nethum_ingot"
+    },
+    "S": {
+      "item": "minecraft:stick"
+    }
+  },
+  "result": {
+    "id": "heartofthecraft:nethum_sword"
+  }
+}

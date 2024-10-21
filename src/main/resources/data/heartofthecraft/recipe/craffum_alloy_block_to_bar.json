@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "heartofthecraft:craffum_alloy_block"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "id": "heartofthecraft:craffum_alloy_bar"
+  }
+}

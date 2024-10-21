@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "XXX",
+    "XXX",
+    "XXX"
+  ],
+  "key": {
+    "X": {
+      "item": "heartofthecraft:ovum_ingot"
+    }
+  },
+  "result": {
+    "id": "heartofthecraft:ovum_block"
+  }
+}

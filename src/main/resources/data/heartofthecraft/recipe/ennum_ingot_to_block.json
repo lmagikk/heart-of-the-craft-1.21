@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "XXX",
+    "XXX",
+    "XXX"
+  ],
+  "key": {
+    "X": {
+      "item": "heartofthecraft:ennum_ingot"
+    }
+  },
+  "result": {
+    "id": "heartofthecraft:ennum_block"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "ABA",
+    "BCB",
+    "ABA"
+  ],
+  "key": {
+    "A": {
+      "item": "heartofthecraft:ennum_block"
+    },
+    "B": {
+      "item": "minecraft:purpur_block"
+    },
+    "C": {
+      "item": "minecraft:dragon_egg"
+    }
+  },
+  "result": {
+    "id": "heartofthecraft:heart_of_the_dragon"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "heartofthecraft:occum_block"
+    }
+  ],
+  "result": {
+    "id": "heartofthecraft:occum_ingot",
+    "count": 9
+  }
+}

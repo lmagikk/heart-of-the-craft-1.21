@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "heartofthecraft:ennum_ore",
+    "heartofthecraft:warrum_ore",
+    "heartofthecraft:ennum_block",
+    "heartofthecraft:warrum_block",
+    "heartofthecraft:craffum_alloy_block"
+  ]
+}

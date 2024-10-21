@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:blasting",
+  "cookingtime": 100,
+  "experience": 1,
+  "ingredient": {
+    "item": "heartofthecraft:warrum_ore"
+  },
+  "result": {
+    "count": 1,
+    "id": "heartofthecraft:warrum_ingot"
+  }
+}

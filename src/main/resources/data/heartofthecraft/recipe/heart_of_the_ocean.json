@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "ABA",
+    "BCB",
+    "ABA"
+  ],
+  "key": {
+    "A": {
+      "item": "heartofthecraft:occum_block"
+    },
+    "B": {
+      "item": "minecraft:prismarine_bricks"
+    },
+    "C": {
+      "item": "minecraft:wet_sponge"
+    }
+  },
+  "result": {
+    "id": "heartofthecraft:heart_of_the_ocean"
+  }
+}

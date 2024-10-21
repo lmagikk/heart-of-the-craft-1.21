@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "ABA",
+    "BCB",
+    "ABA"
+  ],
+  "key": {
+    "A": {
+      "item": "heartofthecraft:nethum_block"
+    },
+    "B": {
+      "item": "minecraft:polished_blackstone_bricks"
+    },
+    "C": {
+      "item": "minecraft:nether_star"
+    }
+  },
+  "result": {
+    "id": "heartofthecraft:heart_of_the_wither"
+  }
+}

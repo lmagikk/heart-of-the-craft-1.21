@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " A ",
+    "BCD",
+    " E "
+  ],
+  "key": {
+    "A": {
+      "item": "heartofthecraft:heart_of_the_ocean"
+    },
+    "B": {
+      "item": "heartofthecraft:heart_of_the_wither"
+    },
+    "C": {
+      "item": "heartofthecraft:heart_of_the_dragon"
+    },
+    "D": {
+      "item": "heartofthecraft:heart_of_the_warden"
+    },
+    "E": {
+      "item": "heartofthecraft:heart_of_the_overworld"
+    }
+
+  },
+  "result": {
+    "id": "heartofthecraft:false_heart_of_minecraft"
+  }
+}

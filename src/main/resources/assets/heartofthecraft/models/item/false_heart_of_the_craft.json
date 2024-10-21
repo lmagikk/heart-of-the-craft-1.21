@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "heartofthecraft:item/false_heart_of_the_craft"
+  }
+}

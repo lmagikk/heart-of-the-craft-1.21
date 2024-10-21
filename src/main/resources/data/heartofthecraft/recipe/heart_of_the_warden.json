@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "ABA",
+    "BCB",
+    "ABA"
+  ],
+  "key": {
+    "A": {
+      "item": "heartofthecraft:warrum_block"
+    },
+    "B": {
+      "item": "minecraft:deepslate_bricks"
+    },
+    "C": {
+      "item": "minecraft:sculk_catalyst"
+    }
+  },
+  "result": {
+    "id": "heartofthecraft:heart_of_the_warden"
+  }
+}

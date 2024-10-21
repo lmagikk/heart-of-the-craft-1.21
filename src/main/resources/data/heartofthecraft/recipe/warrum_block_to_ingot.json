@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "heartofthecraft:warrum_block"
+    }
+  ],
+  "result": {
+    "id": "heartofthecraft:warrum_ingot",
+    "count": 9
+  }
+}

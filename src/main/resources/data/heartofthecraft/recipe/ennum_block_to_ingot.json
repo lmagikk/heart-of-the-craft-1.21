@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "heartofthecraft:ennum_block"
+    }
+  ],
+  "result": {
+
+    "count": 9,
+    "id": "heartofthecraft:ennum_ingot"
+  }
+}

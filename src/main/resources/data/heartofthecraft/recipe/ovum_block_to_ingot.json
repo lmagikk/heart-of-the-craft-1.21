@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "heartofthecraft:ovum_block"
+    }
+  ],
+  "result": {
+    "id": "heartofthecraft:ovum_ingot",
+    "count": 9
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "heartofthecraft:block/craffum_alloy_block"
+  }
+}

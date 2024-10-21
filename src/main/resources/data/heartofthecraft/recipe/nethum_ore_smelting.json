@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smelting",
+  "cookingtime": 200,
+  "experience": 1,
+  "ingredient": {
+    "item": "heartofthecraft:nethum_ore"
+  },
+  "result": {
+    "count": 1,
+    "id": "heartofthecraft:nethum_ingot"
+  }
+}

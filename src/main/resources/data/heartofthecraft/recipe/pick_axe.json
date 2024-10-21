@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "XXX",
+    "XS ",
+    " S "
+  ],
+  "key": {
+    "X": {
+      "item": "heartofthecraft:craffum_alloy_bar"
+    },
+    "S": {
+      "item": "minecraft:stick"
+    }
+  },
+  "result": {
+    "id": "heartofthecraft:pick_axe"
+  }
+}

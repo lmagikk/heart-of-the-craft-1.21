@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "heartofthecraft:ovum_ore",
+    "heartofthecraft:occum_ore",
+    "heartofthecraft:ovum_block",
+    "heartofthecraft:occum_block"
+  ]
+}
