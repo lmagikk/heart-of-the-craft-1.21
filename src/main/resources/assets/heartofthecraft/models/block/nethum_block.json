@@ -1,6 +1,0 @@
-{
-  "parent": "minecraft:block/cube_all",
-  "textures": {
-    "all": "heartofthecraft:block/nethum_block"
-  }
-}

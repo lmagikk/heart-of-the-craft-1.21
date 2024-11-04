@@ -14,8 +14,8 @@ public class ModTags {
         public static final TagKey<Block> INCORRECT_FOR_WARRUM_TOOL = createTag("incorrect_for_warrum_tool");
         public static final TagKey<Block> NEEDS_ENNUM_TOOL = createTag("needs_ennum_tool");
         public static final TagKey<Block> INCORRECT_FOR_ENNUM_TOOL = createTag("incorrect_for_ennum_tool");
-        public static final TagKey<Block> NEEDS_CRAFFIUM_TOOL = createTag("needs_craffium_tool");
-        public static final TagKey<Block> INCORRECT_FOR_CRAFFIUM_TOOL = createTag("incorrect_for_craffium_tool");
+        public static final TagKey<Block> NEEDS_CRAFFUM_TOOL = createTag("needs_craffium_tool");
+        public static final TagKey<Block> INCORRECT_FOR_CRAFFUM_TOOL = createTag("incorrect_for_craffium_tool");
 
 
         private static TagKey<Block> createTag(String name){

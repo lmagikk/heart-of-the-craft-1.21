@@ -27,7 +27,7 @@ public class ModToolsTiers {
             40,
             () -> Ingredient.of(ModItems.ENNUM_INGOT));
 
-    public static final Tier CRAFFIUM = new SimpleTier(ModTags.Blocks.INCORRECT_FOR_CRAFFIUM_TOOL,
+    public static final Tier CRAFFUM = new SimpleTier(ModTags.Blocks.INCORRECT_FOR_CRAFFUM_TOOL,
             -1,
             25,
             12,

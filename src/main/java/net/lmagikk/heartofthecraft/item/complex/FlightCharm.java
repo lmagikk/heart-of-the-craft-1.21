@@ -41,7 +41,7 @@ public class FlightCharm extends Item {
 
     @Override
     public void appendHoverText(ItemStack stack, TooltipContext context, List<Component> tooltipComponents, TooltipFlag tooltipFlag) {
-        tooltipComponents.add(Component.literal("Unbreakable").withStyle(ChatFormatting.GOLD));
+        tooltipComponents.add(Component.literal("Allows creative flight!").withStyle(ChatFormatting.AQUA));
         super.appendHoverText(stack, context, tooltipComponents, tooltipFlag);
     }
 }

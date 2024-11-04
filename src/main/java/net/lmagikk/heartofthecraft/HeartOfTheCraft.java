@@ -1,6 +1,8 @@
 package net.lmagikk.heartofthecraft;
 
+
 import net.lmagikk.heartofthecraft.block.ModBlocks;
+
 import net.lmagikk.heartofthecraft.item.ModCreativeTab;
 import net.lmagikk.heartofthecraft.item.ModItems;
 import org.slf4j.Logger;
@@ -57,6 +59,7 @@ public class HeartOfTheCraft
         ModBlocks.register(modEventBus);
 
 
+
         modEventBus.addListener(this::addCreative);
 
         modContainer.registerConfig(ModConfig.Type.COMMON, Config.SPEC);
@@ -79,14 +82,14 @@ public class HeartOfTheCraft
         }
     }
 
-    // You can use SubscribeEvent and let the Event Bus discover methods to call
+
     @SubscribeEvent
     public void onServerStarting(ServerStartingEvent event)
     {
 
     }
 
-    // You can use EventBusSubscriber to automatically register all static methods in the class annotated with @SubscribeEvent
+
     @EventBusSubscriber(modid = MODID, bus = EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
     public static class ClientModEvents
     {
