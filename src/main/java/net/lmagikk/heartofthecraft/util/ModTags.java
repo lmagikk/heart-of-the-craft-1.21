@@ -17,6 +17,8 @@ public class ModTags {
         public static final TagKey<Block> NEEDS_CRAFFUM_TOOL = createTag("needs_craffium_tool");
         public static final TagKey<Block> INCORRECT_FOR_CRAFFUM_TOOL = createTag("incorrect_for_craffium_tool");
 
+        public static final TagKey<Block> PICK_AXE_MINEABLE = createTag("mineable/pick_axe");
+
 
         private static TagKey<Block> createTag(String name){
             return BlockTags.create(ResourceLocation.fromNamespaceAndPath(HeartOfTheCraft.MODID, name));

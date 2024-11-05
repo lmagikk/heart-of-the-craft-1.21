@@ -32,6 +32,32 @@ public class ModItemModelProvider extends ItemModelProvider {
         basicItem(ModItems.WARRUM_INGOT.get());
         basicItem(ModItems.FLIGHT_CHARM.get());
 
+        handheldItem(ModItems.ENNUM_SWORD.get());
+        handheldItem(ModItems.ENNUM_AXE.get());
+        handheldItem(ModItems.ENNUM_PICKAXE.get());
+        handheldItem(ModItems.NETHUM_SWORD.get());
+        handheldItem(ModItems.NETHUM_AXE.get());
+        handheldItem(ModItems.NETHUM_PICKAXE.get());
+        handheldItem(ModItems.WARRUM_SWORD.get());
+        handheldItem(ModItems.WARRUM_AXE.get());
+        handheldItem(ModItems.WARRUM_PICKAXE.get());
+
+        handheldItem(ModItems.PICK_AXE.get());
+
+        basicItem(ModItems.WARRUM_HELMET.get());
+        basicItem(ModItems.WARRUM_LEGGINGS.get());
+        basicItem(ModItems.WARRUM_CHESTPLATE.get());
+        basicItem(ModItems.WARRUM_BOOTS.get());
+        basicItem(ModItems.NETHUM_HELMET.get());
+        basicItem(ModItems.NETHUM_LEGGINGS.get());
+        basicItem(ModItems.NETHUM_CHESTPLATE.get());
+        basicItem(ModItems.NETHUM_BOOTS.get());
+        basicItem(ModItems.ENNUM_HELMET.get());
+        basicItem(ModItems.ENNUM_LEGGINGS.get());
+        basicItem(ModItems.ENNUM_CHESTPLATE.get());
+        basicItem(ModItems.ENNUM_BOOTS.get());
+
+
 
     }
 

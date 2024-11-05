@@ -1,12 +1,10 @@
 {
   "type": "heartofthecraft:ore_generating",
-  "ingredients": [
+  "ingredient":
     {
       "item": "heartofthecraft:heart_of_the_dragon"
-    }
-  ],
-  "output": {
-    "count": 1,
+    },
+  "result": {
     "id": "heartofthecraft:ennum_ore"
   }
 }

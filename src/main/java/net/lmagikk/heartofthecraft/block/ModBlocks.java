@@ -2,9 +2,11 @@ package net.lmagikk.heartofthecraft.block;
 
 import net.lmagikk.heartofthecraft.HeartOfTheCraft;
 import net.lmagikk.heartofthecraft.item.ModItems;
+import net.minecraft.core.BlockPos;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredBlock;
@@ -67,7 +69,9 @@ public class ModBlocks {
             () -> new Block(BlockBehaviour.Properties.of()
                     .requiresCorrectToolForDrops()));
 
-   
+    public static final DeferredBlock<OreGenBlock> ORE_GENERATOR_BLOCK = registerBlock("ore_generator_block",
+            () -> new OreGenBlock(BlockBehaviour.Properties.of()
+                    .requiresCorrectToolForDrops()));
 
 
     private static <T extends Block> DeferredBlock<T> registerBlock(String name, Supplier<T> block) {

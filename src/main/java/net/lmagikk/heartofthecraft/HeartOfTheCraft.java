@@ -3,8 +3,15 @@ package net.lmagikk.heartofthecraft;
 
 import net.lmagikk.heartofthecraft.block.ModBlocks;
 
+import net.lmagikk.heartofthecraft.block.entity.ModBlockEntities;
+import net.lmagikk.heartofthecraft.item.ModArmorMaterials;
 import net.lmagikk.heartofthecraft.item.ModCreativeTab;
 import net.lmagikk.heartofthecraft.item.ModItems;
+import net.lmagikk.heartofthecraft.recipe.ModRecipes;
+import net.lmagikk.heartofthecraft.screen.ModMenuTypes;
+import net.lmagikk.heartofthecraft.screen.custom.OreGenBlockScreen;
+import net.lmagikk.heartofthecraft.worldgen.ModPlacedFeatures;
+import net.neoforged.neoforge.client.event.RegisterMenuScreensEvent;
 import org.slf4j.Logger;
 
 import com.mojang.logging.LogUtils;
@@ -58,6 +65,13 @@ public class HeartOfTheCraft
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
 
+        ModArmorMaterials.register(modEventBus);
+
+        ModBlockEntities.register(modEventBus);
+        ModMenuTypes.register(modEventBus);
+
+        ModRecipes.register(modEventBus);
+
 
 
         modEventBus.addListener(this::addCreative);
@@ -97,6 +111,11 @@ public class HeartOfTheCraft
         public static void onClientSetup(FMLClientSetupEvent event)
         {
 
+        }
+
+        @SubscribeEvent
+        public static void registerScreens(RegisterMenuScreensEvent event){
+            event.register(ModMenuTypes.ORE_GEN_BLOCK_MENU.get(), OreGenBlockScreen::new);
         }
     }
 }

@@ -2,6 +2,7 @@ package net.lmagikk.heartofthecraft.datagen;
 
 import net.lmagikk.heartofthecraft.HeartOfTheCraft;
 import net.lmagikk.heartofthecraft.block.ModBlocks;
+import net.lmagikk.heartofthecraft.util.ModTags;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.tags.BlockTags;
@@ -19,7 +20,7 @@ public class ModBlockTagProvider extends BlockTagsProvider {
 
     @Override
     protected void addTags(HolderLookup.Provider provider) {
-        tag(BlockTags.MINEABLE_WITH_PICKAXE)
+        this.tag(BlockTags.MINEABLE_WITH_PICKAXE)
                 .add(ModBlocks.ENNUM_BLOCK.get())
                 .add(ModBlocks.NETHUM_BLOCK.get())
                 .add(ModBlocks.WARRUM_BLOCK.get())
@@ -34,15 +35,20 @@ public class ModBlockTagProvider extends BlockTagsProvider {
 
                 .add(ModBlocks.CRAFFUM_ALLOY_BLOCK.get());
 
-        tag(BlockTags.NEEDS_IRON_TOOL)
+        this.tag(BlockTags.NEEDS_IRON_TOOL)
                 .add(ModBlocks.OCCUM_BLOCK.get())
                 .add(ModBlocks.OVUM_BLOCK.get())
                 .add(ModBlocks.OCCUM_ORE.get())
                 .add(ModBlocks.OVUM_ORE.get());
 
-        tag(BlockTags.NEEDS_DIAMOND_TOOL)
+        this.tag(BlockTags.NEEDS_DIAMOND_TOOL)
                 .add(ModBlocks.NETHUM_BLOCK.get())
                 .add(ModBlocks.NETHUM_ORE.get());
+
+        this.tag(ModTags.Blocks.PICK_AXE_MINEABLE)
+                .addTag(BlockTags.MINEABLE_WITH_PICKAXE)
+                .addTag(BlockTags.MINEABLE_WITH_AXE);
+
 
 
     }

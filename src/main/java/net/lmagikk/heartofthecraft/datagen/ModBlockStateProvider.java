@@ -28,6 +28,8 @@ public class ModBlockStateProvider extends BlockStateProvider {
 
         blockWithItem(ModBlocks.CRAFFUM_ALLOY_BLOCK);
 
+        blockWithItem(ModBlocks.ORE_GENERATOR_BLOCK);
+
     }
 
     private void blockWithItem(DeferredBlock<?> deferredBlock){

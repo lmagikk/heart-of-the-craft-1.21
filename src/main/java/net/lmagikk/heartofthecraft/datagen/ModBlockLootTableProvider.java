@@ -31,6 +31,8 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
         dropSelf(ModBlocks.WARRUM_ORE.get());
         dropSelf(ModBlocks.CRAFFUM_ALLOY_BLOCK.get());
 
+        dropSelf(ModBlocks.ORE_GENERATOR_BLOCK.get());
+
     }
 
     @Override

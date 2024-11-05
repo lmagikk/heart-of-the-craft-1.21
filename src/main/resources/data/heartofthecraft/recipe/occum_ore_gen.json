@@ -1,12 +1,10 @@
 {
   "type": "heartofthecraft:ore_generating",
-  "ingredients": [
-    {
-      "item": "heartofthecraft:heart_of_the_ocean"
-    }
-  ],
-  "output": {
-    "count": 1,
+  "ingredient":
+  {
+    "item": "heartofthecraft:heart_of_the_ocean"
+  },
+  "result": {
     "id": "heartofthecraft:occum_ore"
   }
 }

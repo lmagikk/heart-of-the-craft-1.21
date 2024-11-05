@@ -21,14 +21,14 @@ public class ModToolsTiers {
             () -> Ingredient.of(ModItems.WARRUM_INGOT));
 
     public static final Tier ENNUM = new SimpleTier(ModTags.Blocks.INCORRECT_FOR_ENNUM_TOOL,
-            -1,
+            1,
             16,
             6,
             40,
             () -> Ingredient.of(ModItems.ENNUM_INGOT));
 
     public static final Tier CRAFFUM = new SimpleTier(ModTags.Blocks.INCORRECT_FOR_CRAFFUM_TOOL,
-            -1,
+            1,
             25,
             12,
             50,

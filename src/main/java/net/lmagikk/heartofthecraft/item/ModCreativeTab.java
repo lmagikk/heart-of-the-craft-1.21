@@ -83,6 +83,8 @@ public class ModCreativeTab {
                         output.accept(ModItems.FLIGHT_CHARM);
                         output.accept(ModItems.PICK_AXE);
 
+                        output.accept(ModBlocks.ORE_GENERATOR_BLOCK);
+
                     }).build());
 
     public static void register(IEventBus eventBus){
