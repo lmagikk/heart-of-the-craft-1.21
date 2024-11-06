@@ -41,7 +41,7 @@ public class JEIHeartOfTheCraftPlugin implements IModPlugin {
 
     @Override
     public void registerGuiHandlers(IGuiHandlerRegistration registration) {
-        registration.addRecipeClickArea(OreGenBlockScreen.class, 85, 30, 20, 30 , OreGenRecipeCategory.ORE_GEN_RECIPE_RECIPE_TYPE);
+        registration.addRecipeClickArea(OreGenBlockScreen.class, 80, 30, 20, 30 , OreGenRecipeCategory.ORE_GEN_RECIPE_RECIPE_TYPE);
 
     }
 }

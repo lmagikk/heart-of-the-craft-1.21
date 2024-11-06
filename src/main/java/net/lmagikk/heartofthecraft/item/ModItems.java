@@ -62,8 +62,8 @@ public class ModItems {
                     .stacksTo(64)
                     .rarity(Rarity.EPIC))
             {
-                public boolean isFoil(ItemStack itemStack)
-                {
+                @Override
+                public boolean isFoil(ItemStack stack) {
                     return true;
                 }
             });
@@ -76,16 +76,23 @@ public class ModItems {
     public static final DeferredItem<Item> TRUE_HEART_OF_THE_CRAFT = ITEMS.register("true_heart_of_the_craft",
             () -> new Item(new Item.Properties()
                     .stacksTo(16)
-                    .rarity(Rarity.EPIC)));
+                    .rarity(Rarity.EPIC)){
+                @Override
+                public boolean isFoil(ItemStack stack) {
+                    return true;
+                }
+            });
 
     public static final DeferredItem<Item> HEART_OF_THE_PACK = ITEMS.register("heart_of_the_pack",
             () -> new Item(new Item.Properties()
                     .stacksTo(16)
                     .rarity(Rarity.EPIC))
             {
-                public boolean isFoil(ItemStack itemStack) {
+                @Override
+                public boolean isFoil(ItemStack stack) {
                     return true;
                 }
+
             });
 
     public static final DeferredItem<Item> SHARD_OF_THE_PACK = ITEMS.register("shard_of_the_pack",
@@ -93,14 +100,20 @@ public class ModItems {
                     .stacksTo(64)
                     .rarity(Rarity.EPIC))
             {
-                public boolean isFoil(ItemStack stack){
+                @Override
+                public boolean isFoil(ItemStack stack) {
                     return true;
                 }
             });
 
 
     public static final DeferredItem<Item> FLIGHT_CHARM = ITEMS.register("flight_charm",
-            () -> new FlightCharm(new Item.Properties()));
+            () -> new FlightCharm(new Item.Properties()){
+                @Override
+                public boolean isFoil(ItemStack stack) {
+                    return true;
+                }
+            });
 
 
 
@@ -123,37 +136,64 @@ public class ModItems {
     //Warrum
 
     public static final DeferredItem<SwordItem> WARRUM_SWORD = ITEMS.register("warrum_sword",
-            () -> new SwordItem(ModToolsTiers.NETHUM, new Item.Properties()
-                    .attributes(SwordItem.createAttributes(ModToolsTiers.NETHUM, 9f, 0f))
+            () -> new SwordItem(ModToolsTiers.WARRUM, new Item.Properties()
+                    .attributes(SwordItem.createAttributes(ModToolsTiers.WARRUM, 9f, 0f))
                     .rarity(Rarity.EPIC)));
     public static final DeferredItem<PickaxeItem> WARRUM_PICKAXE = ITEMS.register("warrum_pickaxe",
-            () -> new PickaxeItem(ModToolsTiers.NETHUM, new Item.Properties()
-                    .attributes(PickaxeItem.createAttributes(ModToolsTiers.NETHUM, 4f, -1.5f))
+            () -> new PickaxeItem(ModToolsTiers.WARRUM, new Item.Properties()
+                    .attributes(PickaxeItem.createAttributes(ModToolsTiers.WARRUM, 4f, -1.5f))
                     .rarity(Rarity.EPIC)));
     public static final DeferredItem<AxeItem> WARRUM_AXE = ITEMS.register("warrum_axe",
-            () -> new AxeItem(ModToolsTiers.NETHUM, new Item.Properties()
-                    .attributes(AxeItem.createAttributes(ModToolsTiers.NETHUM, 14f, -2f))
+            () -> new AxeItem(ModToolsTiers.WARRUM, new Item.Properties()
+                    .attributes(AxeItem.createAttributes(ModToolsTiers.WARRUM, 14f, -2f))
                     .rarity(Rarity.EPIC)));
 
     //Ennum
 
     public static final DeferredItem<SwordItem> ENNUM_SWORD = ITEMS.register("ennum_sword",
-            () -> new SwordItem(ModToolsTiers.NETHUM, new Item.Properties()
-                    .attributes(SwordItem.createAttributes(ModToolsTiers.NETHUM, 12f, 0.5f))
-                    .rarity(Rarity.EPIC)));
+            () -> new SwordItem(ModToolsTiers.ENNUM, new Item.Properties()
+                    .attributes(SwordItem.createAttributes(ModToolsTiers.ENNUM, 12f, 0.5f))
+                    .rarity(Rarity.EPIC)){
+                @Override
+                public boolean isDamaged(ItemStack stack) {
+                    return false;
+                }
+            });
+
     public static final DeferredItem<PickaxeItem> ENNUM_PICKAXE = ITEMS.register("ennum_pickaxe",
-            () -> new PickaxeItem(ModToolsTiers.NETHUM, new Item.Properties()
-                    .attributes(PickaxeItem.createAttributes(ModToolsTiers.NETHUM, 5f, -1f))
-                    .rarity(Rarity.EPIC)));
+            () -> new PickaxeItem(ModToolsTiers.ENNUM, new Item.Properties()
+                    .attributes(PickaxeItem.createAttributes(ModToolsTiers.ENNUM, 5f, -1f))
+                    .rarity(Rarity.EPIC)) {
+                @Override
+                public boolean isDamaged(ItemStack stack) {
+                    return false;
+                }
+            });
+
     public static final DeferredItem<AxeItem> ENNUM_AXE = ITEMS.register("ennum_axe",
-            () -> new AxeItem(ModToolsTiers.NETHUM, new Item.Properties()
-                    .attributes(AxeItem.createAttributes(ModToolsTiers.NETHUM, 17f, -1.5f))
-                    .rarity(Rarity.EPIC)));
+            () -> new AxeItem(ModToolsTiers.ENNUM, new Item.Properties()
+                    .attributes(AxeItem.createAttributes(ModToolsTiers.ENNUM, 17f, -1.5f))
+                    .rarity(Rarity.EPIC)){
+                @Override
+                public boolean isDamaged(ItemStack stack) {
+                    return false;
+                }
+            });
 
     public static final DeferredItem<PickAxe> PICK_AXE = ITEMS.register("pick_axe",
             () -> new PickAxe(ModToolsTiers.CRAFFUM, new Item.Properties()
                     .attributes(PickAxe.createAttributes(ModToolsTiers.CRAFFUM, 20f, 0f))
-                    .rarity(Rarity.EPIC)));
+                    .rarity(Rarity.EPIC)){
+                @Override
+                public boolean isDamageable(ItemStack stack) {
+                    return false;
+                }
+
+                @Override
+                public boolean isDamaged(ItemStack stack) {
+                    return false;
+                }
+            });
 
 
     public static final DeferredItem<ArmorItem> NETHUM_HELMET = ITEMS.register("nethum_helmet",
@@ -184,16 +224,16 @@ public class ModItems {
 
     public static final DeferredItem<ArmorItem> ENNUM_HELMET = ITEMS.register("ennum_helmet",
             () -> new ArmorItem(ModArmorMaterials.ENNUM_ARMOR_MATERIAL, ArmorItem.Type.HELMET,
-                    new Item.Properties().durability(ArmorItem.Type.HELMET.getDurability(-1))));
+                    new Item.Properties()));
     public static final DeferredItem<ArmorItem> ENNUM_CHESTPLATE = ITEMS.register("ennum_chestplate",
             () -> new ArmorItem(ModArmorMaterials.ENNUM_ARMOR_MATERIAL, ArmorItem.Type.CHESTPLATE,
-                    new Item.Properties().durability(ArmorItem.Type.HELMET.getDurability(-1))));
+                    new Item.Properties()));
     public static final DeferredItem<ArmorItem> ENNUM_LEGGINGS = ITEMS.register("ennum_leggings",
             () -> new ArmorItem(ModArmorMaterials.ENNUM_ARMOR_MATERIAL, ArmorItem.Type.LEGGINGS,
-                    new Item.Properties().durability(ArmorItem.Type.HELMET.getDurability(-1))));
+                    new Item.Properties()));
     public static final DeferredItem<ArmorItem> ENNUM_BOOTS = ITEMS.register("ennum_boots",
             () -> new ArmorItem(ModArmorMaterials.ENNUM_ARMOR_MATERIAL, ArmorItem.Type.BOOTS,
-                    new Item.Properties().durability(ArmorItem.Type.HELMET.getDurability(-1))));
+                    new Item.Properties()));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);

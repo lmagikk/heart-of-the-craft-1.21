@@ -1,18 +1,29 @@
 {
-  "type": "minecraft:crafting_shapeless",
-  "category": "misc",
-  "ingredients": [
-    {
-      "item": "heartofthecraft:occum_ingot",
-      "item": "heartofthecraft:nethum_ingot",
-      "item": "heartofthecraft:ennum_ingot",
-      "item": "heartofthecraft:warrum_ingot",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " A ",
+    "BCD",
+    " E "
+  ],
+  "key": {
+    "A": {
+      "item": "heartofthecraft:occum_ingot"
+    },
+    "B": {
+      "item": "heartofthecraft:nethum_ingot"
+    },
+    "C": {
+      "item": "heartofthecraft:ennum_ingot"
+    },
+    "D": {
+      "item": "heartofthecraft:warrum_ingot"
+    },
+    "E": {
       "item": "heartofthecraft:ovum_ingot"
     }
 
-  ],
-
+  },
   "result": {
-    "id": "heartofminecraft:craffum_alloy_bar"
+    "id": "heartofthecraft:craffum_alloy_bar"
   }
 }

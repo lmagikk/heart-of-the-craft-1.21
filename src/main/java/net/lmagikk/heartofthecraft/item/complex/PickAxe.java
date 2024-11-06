@@ -28,7 +28,7 @@ import javax.annotation.Nullable;
 import java.util.Map;
 import java.util.Optional;
 
-public class PickAxe extends DiggerItem {
+public class PickAxe extends PickaxeItem {
 
     protected static final Map<Block, Block> STRIPPABLES = new ImmutableMap.Builder<Block, Block>()
             .put(Blocks.OAK_WOOD, Blocks.STRIPPED_OAK_WOOD)
@@ -55,8 +55,10 @@ public class PickAxe extends DiggerItem {
             .build();
 
     public PickAxe(Tier tier, Properties properties){
-        super(ModToolsTiers.CRAFFUM, ModTags.Blocks.PICK_AXE_MINEABLE, properties  );
+        super(ModToolsTiers.CRAFFUM,  properties  );
     }
+
+
 
     @Override
     public float getDestroySpeed(ItemStack stack, BlockState state) {
@@ -75,6 +77,9 @@ public class PickAxe extends DiggerItem {
     }
 
     public InteractionResult useOn(UseOnContext context) {
+
+
+
         Level level = context.getLevel();
         BlockPos blockpos = context.getClickedPos();
         Player player = context.getPlayer();
@@ -129,6 +134,8 @@ public class PickAxe extends DiggerItem {
         return Optional.ofNullable(STRIPPABLES.get(pUnstrippedState.getBlock()))
                 .map(p_150689_ -> p_150689_.defaultBlockState().setValue(RotatedPillarBlock.AXIS, pUnstrippedState.getValue(RotatedPillarBlock.AXIS)));
     }
+
+
 
     @Override
     public boolean canPerformAction(ItemStack stack, ItemAbility itemAbility) {

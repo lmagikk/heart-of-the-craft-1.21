@@ -13,10 +13,10 @@
       "item": "minecraft:crying_obsidian"
     },
     "C": {
-      "item": "heartofthecraft:false_heart_of_minecraft"
+      "item": "heartofthecraft:false_heart_of_the_craft"
     }
   },
   "result": {
-    "id": "heartofthecraft:true_heart_of_minecraft"
+    "id": "heartofthecraft:true_heart_of_the_craft"
   }
 }

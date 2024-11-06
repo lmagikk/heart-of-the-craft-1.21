@@ -4,6 +4,7 @@ package net.lmagikk.heartofthecraft.compat;
 import mezz.jei.api.constants.VanillaTypes;
 import mezz.jei.api.gui.builder.IRecipeLayoutBuilder;
 import mezz.jei.api.gui.drawable.IDrawable;
+import mezz.jei.api.gui.drawable.IDrawableBuilder;
 import mezz.jei.api.helpers.IGuiHelper;
 import mezz.jei.api.recipe.IFocusGroup;
 import mezz.jei.api.recipe.RecipeIngredientRole;
@@ -19,9 +20,16 @@ import org.jetbrains.annotations.Nullable;
 
 public class OreGenRecipeCategory implements IRecipeCategory<OreGenRecipe> {
 
+
+
+
+
+
+
+
     public static final ResourceLocation UID = ResourceLocation.fromNamespaceAndPath(HeartOfTheCraft.MODID, "ore_generating");
     public static final ResourceLocation TEXTURE = ResourceLocation.fromNamespaceAndPath(HeartOfTheCraft.MODID,
-            "textures/gui/ore_generator_block_gui.png");
+            "textures/gui/ore_gen_jeir.png");
 
     public static final RecipeType<OreGenRecipe> ORE_GEN_RECIPE_RECIPE_TYPE =
             new RecipeType<>(UID, OreGenRecipe.class);
@@ -30,7 +38,9 @@ public class OreGenRecipeCategory implements IRecipeCategory<OreGenRecipe> {
     private final IDrawable icon;
 
     public OreGenRecipeCategory(IGuiHelper helper){
-        this.background = helper.createDrawable(TEXTURE, 0, 0, 176, 82);
+
+        this.background = helper.createDrawable(TEXTURE, 0, 0, 256, 115);
+
         this.icon = helper.createDrawableIngredient(VanillaTypes.ITEM_STACK, new ItemStack(ModBlocks.ORE_GENERATOR_BLOCK.get()));
     }
 
@@ -57,8 +67,8 @@ public class OreGenRecipeCategory implements IRecipeCategory<OreGenRecipe> {
 
     @Override
     public void setRecipe(IRecipeLayoutBuilder builder, OreGenRecipe recipe, IFocusGroup focuses) {
-        builder.addSlot(RecipeIngredientRole.INPUT,80, 11 ).addIngredients(recipe.getIngredients().get(0));
-        builder.addSlot(RecipeIngredientRole.OUTPUT,80, 59 ).addItemStack(recipe.getResultItem(null));
+        builder.addSlot(RecipeIngredientRole.INPUT,120, 20 ).addIngredients(recipe.getIngredients().get(0));
+        builder.addSlot(RecipeIngredientRole.OUTPUT,120, 90 ).addItemStack(recipe.getResultItem(null));
 
 
     }
